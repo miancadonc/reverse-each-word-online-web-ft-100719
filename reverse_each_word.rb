@@ -7,6 +7,6 @@
 
 def reverse_each_word(phrase)
   split_phrase = phrase.split(" ")
-  split_phrase.collect! {|word| word.reverse}
-  split_phrase.join(" ")
+  new_phrase = split_phrase.collect {|word| word.reverse}
+  new_phrase.join(" ")
 end
